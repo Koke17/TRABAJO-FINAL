@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Lifting</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="img/LogoCarlos-1.ico">
+</head>
+
+<body>
+    <div class="contenedor">
+        
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="merchandising.html">Merchandising</a></li>
+                    <li><a href="cuestionario.html">Contacto</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="nosotros.html">Acerca de nosotros</a></li>
+                </ul>
+            </nav>
+            <div class="user">
+                <p>Jorge Pérez Cerro</p>
+                <img src="img/user.png" alt="imagen-de-usuario"><!--He utilizado una imagen de Google que cuadrase en el espacio-->
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <img src="img/search.png" class="search-icon" alt="">
+            <div class="social-links">
+                <img src="img/ig.png" alt="">
+                <img src="img/fb.png" alt="">
+                <img src="img/tw.png" alt="">
+            </div>
+            <img src="images/info.png" class="info-icon" alt="">
+        </div>
+
+        <div class="msg-contenedor">
+            <div id="slider">
+                <div class="msg-col">
+                    <h1>¿Quiénes somos?</h1>
+                    <p>Healthy Training es un proyecto que surgio entre varios amigos sobre entrenamiento personal y asesorías a través del cual ayudamos tanto a gente que quiere llevar un estilo de vida más saludable, como atletas de alto nivel.</p>
+                    <a href="nosotros.html">Conocer más</a>
+                </div>
+                <div class="msg-col">
+                    <h1>Merchandising</h1>
+                    <p>Aqui podrás encontrar nuestro catálogo de ropa, con algunos de los productos que ofrecemos.</p>
+                    <a href="merchandising.html">Catálogo</a>
+                </div>
+                <div class="msg-col">
+                    <h1>Únete a nosotros</h1>
+                    <p>Si te gustaría formar parte del proyecto y darnos un voto de confianza para que saquemos lo mejor de ti, realiza un breve cuestionario.</p>
+                    <a href="cuestionario.html">Cuestionario</a>
+                </div>
+                <div class="msg-col">
+                    <h1>Noticias</h1>
+                    <p>Aqui encontrarás las noticias relacionadas con el mundo del fitness, así como de clientes satisfechos.</p>
+                    <a href="">Conocer más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="controller">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+            <div id="line4"></div>
+            <div id="active"></div>
+        </div>
+
+    </div>
+
+<!--Este Script es sacado de internet-->
+    <script>
+
+        var slider = document.getElementById('slider');
+        var active = document.getElementById('active');
+        var line1 = document.getElementById('line1');
+        var line2 = document.getElementById('line2');
+        var line3 = document.getElementById('line3');
+        var line4 = document.getElementById('line4');
+
+        line1.onclick = function(){
+            slider.style.transform = 'translateX(0)';
+            active.style.top = '0px';            
+        }
+        line2.onclick = function(){
+            slider.style.transform = 'translateX(-25%)';            
+            active.style.top = '80px'; 
+        }
+        line3.onclick = function(){
+            slider.style.transform = 'translateX(-50%)';            
+            active.style.top = '160px'; 
+        }
+        line4.onclick = function(){
+            slider.style.transform = 'translateX(-75%)';            
+            active.style.top = '240px'; 
+        }
+        
+    </script>
+
+
+</body>
+
+</html>
